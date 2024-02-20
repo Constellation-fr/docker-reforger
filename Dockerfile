@@ -76,10 +76,10 @@ ENV SKIP_INSTALL=false
 
 WORKDIR /reforger
 
-VOLUME /steamcmd
-VOLUME /home/profile
-VOLUME /reforger/Configs
-VOLUME /reforger/workshop
+# VOLUME /steamcmd
+# VOLUME /home/profile
+# VOLUME /reforger/Configs
+# VOLUME /reforger/workshop
 
 EXPOSE 2001/udp
 EXPOSE 17777/udp

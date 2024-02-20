@@ -4,7 +4,7 @@ import random
 import re
 import subprocess
 
-CONFIG_GENERATED = "/reforger/Configs/docker_generated.json"
+CONFIG_GENERATED = "/configs/docker_generated.json"
 
 
 def env_defined(key):
@@ -42,7 +42,7 @@ if os.environ["SKIP_INSTALL"] in ["", "false"]:
     subprocess.call(steamcmd)
 
 if os.environ["ARMA_CONFIG"] != "docker_generated":
-    config_path = f"/reforger/Configs/{os.environ['ARMA_CONFIG']}"
+    config_path = f"{os.environ['ARMA_CONFIG']}"
 else:
     if os.path.exists(CONFIG_GENERATED):
         f = open(CONFIG_GENERATED)
